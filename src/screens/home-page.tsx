@@ -1,18 +1,36 @@
-import React from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
-import {Navigation} from 'react-native-navigation';
+import {Icons} from 'assets/images';
+import SCREEN_ID from 'navigation/screen-id';
+import React, {View, Button, Text, StyleSheet} from 'react-native';
+import {NavigationFunctionComponent, Navigation} from 'react-native-navigation';
 
-const HomePage = (props: {componentId: string}) => {
+interface Props {
+  name: string;
+}
+
+const HomePage: NavigationFunctionComponent<Props> = ({componentId, name}) => {
   return (
     <View style={styles.root}>
       <Text>Hello React Native Navigation 👋</Text>
       <Button
+        title="Open side menu"
+        color="#710ce3"
+        onPress={() =>
+          Navigation.mergeOptions(componentId, {
+            sideMenu: {
+              left: {
+                visible: true,
+              },
+            },
+          })
+        }
+      />
+      <Button
         title="Push Settings Screen"
         color="#710ce3"
         onPress={() =>
-          Navigation.push(props.componentId, {
+          Navigation.push(componentId, {
             component: {
-              name: 'settings',
+              name: SCREEN_ID.SETTINGS,
               options: {
                 topBar: {
                   title: {
@@ -36,5 +54,23 @@ const styles = StyleSheet.create({
     backgroundColor: 'whitesmoke',
   },
 });
+
+HomePage.options = {
+  topBar: {
+    title: {
+      text: 'Hello functional component',
+    },
+    subtitle: {
+      text: 'Hello',
+    },
+    rightButtons: [
+      {
+        id: 'compose',
+        systemItem: 'compose',
+        color: 'red',
+      },
+    ],
+  },
+};
 
 export default HomePage;
