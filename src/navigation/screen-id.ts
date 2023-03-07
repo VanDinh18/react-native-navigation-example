@@ -1,0 +1,8 @@
+const SCREEN_ID = {
+  SIGN_IN: 'SIGN_IN',
+  HOME_PAGE: 'HOME_PAGE',
+  SETTINGS: 'SETTINGS',
+  SIDE_MENU: 'SIDE_MENU',
+};
+
+export default SCREEN_ID;

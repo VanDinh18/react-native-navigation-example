@@ -1,19 +1,15 @@
+import SCREEN_ID from 'navigation/screen-id';
 import {Navigation} from 'react-native-navigation';
-import App from './App';
-import HomePage from './src/screens/home-page';
-import Settings from './src/screens/settings';
+import {AuthStack} from 'navigation/auth-stack';
+import HomePage from 'screens/home-page';
+import Settings from 'screens/settings';
+import SignIn from 'screens/sign-in';
+import SideMenu from 'screens/side-menu';
 
-HomePage.options = {
-  topBar: {
-    title: {
-      text: 'Home',
-    },
-  },
-};
-
-Navigation.registerComponent('com.myApp.WelcomeScreen', () => App);
-Navigation.registerComponent('home-page', () => HomePage);
-Navigation.registerComponent('settings', () => Settings);
+Navigation.registerComponent(SCREEN_ID.HOME_PAGE, () => HomePage);
+Navigation.registerComponent(SCREEN_ID.SETTINGS, () => Settings);
+Navigation.registerComponent(SCREEN_ID.SIGN_IN, () => SignIn);
+Navigation.registerComponent(SCREEN_ID.SIDE_MENU, () => SideMenu);
 
 Navigation.setDefaultOptions({
   statusBar: {
@@ -39,16 +35,6 @@ Navigation.setDefaultOptions({
 
 Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
-    root: {
-      stack: {
-        children: [
-          {
-            component: {
-              name: 'home-page',
-            },
-          },
-        ],
-      },
-    },
+    root: AuthStack,
   });
 });
