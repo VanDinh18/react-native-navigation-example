@@ -1,20 +1,24 @@
-import {Icons} from 'assets/images';
 import SCREEN_ID from 'navigation/screen-id';
-import React, {View, Button, Text, StyleSheet} from 'react-native';
-import {NavigationFunctionComponent, Navigation} from 'react-native-navigation';
-import {useAppSelector} from 'store/hooks';
+import React, {Button, StyleSheet, Text, View} from 'react-native';
+import {Navigation, NavigationFunctionComponent} from 'react-native-navigation';
+import {useAppDispatch} from 'store/hooks';
+import {initActions} from 'store/slices/initSlice';
 
 interface Props {
   name: string;
 }
 
-const HomePage: NavigationFunctionComponent<Props> = ({componentId, name}) => {
-  const {data} = useAppSelector(state => state.init);
-  console.log('data', data);
+const HomePage: NavigationFunctionComponent<Props> = ({componentId}) => {
+  const dispatch = useAppDispatch();
 
   return (
     <View style={styles.root}>
       <Text>Hello React Native Navigation 👋</Text>
+      <Button
+        title="Add redux data"
+        color="#710ce3"
+        onPress={() => dispatch(initActions.addData({title: 'test'}))}
+      />
       <Button
         title="Open side menu"
         color="#710ce3"

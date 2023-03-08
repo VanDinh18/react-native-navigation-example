@@ -1,11 +1,13 @@
 import React from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
-import {Navigation} from 'react-native-navigation';
+import {StyleSheet, Text, View} from 'react-native';
+import {useAppSelector} from 'store/hooks';
 
-const Settings = (props: {componentId: string}) => {
+const Settings = () => {
+  const {data} = useAppSelector(state => state.init);
+
   return (
     <View style={styles.root}>
-      <Text>Settings Screen</Text>
+      <Text>{`data length: ${data.length}`}</Text>
     </View>
   );
 };
