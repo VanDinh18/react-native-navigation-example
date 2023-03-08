@@ -36,7 +36,12 @@ export const registerComponent = () => {
     () => HomePage,
   );
 
-  Navigation.registerComponent(SCREEN_ID.SETTINGS, () => Settings);
+  Navigation.registerComponent(
+    SCREEN_ID.SETTINGS,
+    () => reduxProvider(Settings),
+    () => Settings,
+  );
+
   Navigation.registerComponent(SCREEN_ID.SIGN_IN, () => SignIn);
   Navigation.registerComponent(SCREEN_ID.SIDE_MENU, () => SideMenu);
 };

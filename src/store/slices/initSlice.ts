@@ -1,4 +1,6 @@
+import {persistReducer} from 'redux-persist';
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {generatePersistConfig} from 'store/config';
 
 interface IState {
   data: any[];
@@ -21,5 +23,10 @@ const initSlice = createSlice({
   },
 });
 
-export const {addData, clearData} = initSlice.actions;
-export default initSlice.reducer;
+const initActions = initSlice.actions;
+const initReducer = persistReducer<IState>(
+  generatePersistConfig('init', ['data']),
+  initSlice.reducer,
+);
+
+export {initActions, initReducer};
