@@ -1,3 +1,4 @@
+import {Icons} from 'assets/images';
 import {Layout} from 'react-native-navigation';
 import SCREEN_ID from './screen-id';
 
@@ -14,6 +15,7 @@ export const MainTabs: Layout = {
                   bottomTab: {
                     text: 'Home',
                     selectedTextColor: 'red',
+                    icon: Icons.IcTabHome,
                   },
                 },
               },
@@ -31,6 +33,7 @@ export const MainTabs: Layout = {
                   bottomTab: {
                     text: 'Settings',
                     selectedTextColor: 'red',
+                    icon: Icons.IcTabHome,
                   },
                 },
               },
