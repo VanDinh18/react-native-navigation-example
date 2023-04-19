@@ -1,4 +1,3 @@
-import SCREEN_ID from 'navigation/screen-id';
 import React, {View, Button, Text, StyleSheet} from 'react-native';
 import {NavigationFunctionComponent, Navigation} from 'react-native-navigation';
 

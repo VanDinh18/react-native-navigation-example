@@ -1,70 +1,47 @@
-import SCREEN_ID from 'navigation/screen-id';
-import React, {Button, StyleSheet, Text, View} from 'react-native';
-import {Navigation, NavigationFunctionComponent} from 'react-native-navigation';
+import ListFeatureRestaurant from 'components/list-feature-restaurant';
+import React, {StyleSheet, View} from 'react-native';
+import {NavigationFunctionComponent} from 'react-native-navigation';
 import {useAppDispatch} from 'store/hooks';
-import {initActions} from 'store/slices/initSlice';
+import {COLORS} from 'utils/colors';
+import {IFoodItem} from 'utils/models';
 
 interface Props {
   name: string;
 }
 
+const list: IFoodItem[] = [
+  {
+    id: 1,
+    image: require('../assets/images/img-banner-food.png'),
+  },
+  {
+    id: 2,
+    image: require('../assets/images/img-banner-food-2.png'),
+  },
+  {
+    id: 3,
+    image: require('../assets/images/img-banner-food.png'),
+  },
+  {
+    id: 4,
+    image: require('../assets/images/img-banner-food-2.png'),
+  },
+];
+
 const HomePage: NavigationFunctionComponent<Props> = ({componentId}) => {
   const dispatch = useAppDispatch();
 
   return (
-    <View style={styles.root}>
-      <Text>Hello React Native Navigation 👋</Text>
-      <Button
-        title="Add redux data"
-        color="#710ce3"
-        onPress={() => dispatch(initActions.addData({title: 'test'}))}
-      />
-      <Button
-        title="Open side menu"
-        color="#710ce3"
-        onPress={() =>
-          Navigation.mergeOptions(componentId, {
-            sideMenu: {
-              left: {
-                visible: true,
-              },
-            },
-          })
-        }
-      />
-      <Button
-        title="Push Settings Screen"
-        color="#710ce3"
-        onPress={() =>
-          Navigation.showModal({
-            stack: {
-              children: [
-                {
-                  component: {
-                    name: SCREEN_ID.SETTINGS,
-                    options: {
-                      topBar: {
-                        title: {
-                          text: 'Modal',
-                        },
-                      },
-                    },
-                  },
-                },
-              ],
-            },
-          })
-        }
-      />
+    <View style={styles.container}>
+      <ListFeatureRestaurant data={list} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  root: {
+  container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: COLORS.background,
   },
 });
 
