@@ -1,7 +1,15 @@
 import {LoremIpsum} from 'lorem-ipsum';
+import {Dimensions} from 'react-native';
 import shortid from 'shortid';
 
 export const HEADER_HEIGHT = 50;
+
+const {width: WINDOW_WIDTH, height: WINDOW_HEIGHT} = Dimensions.get('window');
+
+export const METRICS = {
+  WIDTH: WINDOW_WIDTH,
+  HEIGHT: WINDOW_HEIGHT,
+};
 
 const lorem = new LoremIpsum({
   wordsPerSentence: {

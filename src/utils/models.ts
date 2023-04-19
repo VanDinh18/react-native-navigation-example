@@ -29,3 +29,8 @@ export enum EPosition {
   TOP = 'top',
   BOTTOM = 'bottom',
 }
+
+export interface IFoodItem {
+  id: number;
+  image: any;
+}
