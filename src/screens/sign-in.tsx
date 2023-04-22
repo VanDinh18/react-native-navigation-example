@@ -1,12 +1,11 @@
 import {DrawerLayout} from 'navigation/drawer-layout';
 import React from 'react';
-import {View, Button, StyleSheet} from 'react-native';
+import {Button, StyleSheet, View} from 'react-native';
 import {Navigation} from 'react-native-navigation';
-import {MainTabs} from '../navigation/main-tabs';
 
 const SignIn = (props: {componentId: string}) => {
   return (
-    <View style={styles.root}>
+    <View style={styles.container}>
       <Button
         title="SignIn"
         onPress={() => {
@@ -20,10 +19,8 @@ const SignIn = (props: {componentId: string}) => {
 };
 
 const styles = StyleSheet.create({
-  root: {
+  container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: 'whitesmoke',
   },
 });
