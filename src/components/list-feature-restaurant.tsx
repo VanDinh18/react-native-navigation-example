@@ -24,6 +24,7 @@ const ListFeatureRestaurant = (props: Props) => {
     Navigation.push(SCREEN_ID.HOME_PAGE_ID, {
       component: {
         name: SCREEN_NAME.FOOD_DETAIL,
+        id: SCREEN_ID.FOOD_DETAIL_ID,
         passProps: {data: item},
         options: {
           animations: {

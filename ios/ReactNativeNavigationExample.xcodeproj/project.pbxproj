@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D79F6B8F29F92CF000557AA0 /* VisionCameraFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F6B8E29F92CF000557AA0 /* VisionCameraFaceDetector.swift */; };
+		D79F6B9129F92FFA00557AA0 /* VisionCameraFaceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F6B9029F92FFA00557AA0 /* VisionCameraFaceDetector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-ReactNativeNavigationExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeNavigationExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeNavigationExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		D79F6B8D29F92CEE00557AA0 /* ReactNativeNavigationExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeNavigationExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		D79F6B8E29F92CF000557AA0 /* VisionCameraFaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionCameraFaceDetector.swift; sourceTree = "<group>"; };
+		D79F6B9029F92FFA00557AA0 /* VisionCameraFaceDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisionCameraFaceDetector.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,7 +91,9 @@
 		13B07FAE1A68108700A75B9A /* ReactNativeNavigationExample */ = {
 			isa = PBXGroup;
 			children = (
+				D79F6B8C29F92CA000557AA0 /* FaceDetector */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				D79F6B8D29F92CEE00557AA0 /* ReactNativeNavigationExample-Bridging-Header.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -148,6 +155,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D79F6B8C29F92CA000557AA0 /* FaceDetector */ = {
+			isa = PBXGroup;
+			children = (
+				D79F6B8E29F92CF000557AA0 /* VisionCameraFaceDetector.swift */,
+				D79F6B9029F92FFA00557AA0 /* VisionCameraFaceDetector.m */,
+			);
+			path = FaceDetector;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,7 +223,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -412,8 +428,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79F6B8F29F92CF000557AA0 /* VisionCameraFaceDetector.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D79F6B9129F92FFA00557AA0 /* VisionCameraFaceDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactNativeNavigationExampleTests/Info.plist;
@@ -486,6 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FA82PWW2HD;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +564,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeNavigationExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeNavigationExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -556,6 +578,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FA82PWW2HD;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -612,6 +635,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeNavigationExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeNavigationExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
