@@ -22,7 +22,7 @@ const SignIn = (props: {componentId: string}) => {
 
   return (
     <View style={styles.container}>
-      {device && (
+      {/* {device && (
         <Camera
           frameProcessor={frameProcessor}
           style={StyleSheet.absoluteFill}
@@ -30,7 +30,16 @@ const SignIn = (props: {componentId: string}) => {
           isActive={true}
           frameProcessorFps={5}
         />
-      )}
+      )} */}
+
+      <Button
+        title="SignIn"
+        onPress={() => {
+          Navigation.setRoot({
+            root: DrawerLayout,
+          });
+        }}
+      />
     </View>
   );
 };
@@ -41,16 +50,5 @@ const styles = StyleSheet.create({
     backgroundColor: 'whitesmoke',
   },
 });
-
-{
-  /* <Button
-  title="SignIn"
-  onPress={() => {
-    Navigation.setRoot({
-      root: DrawerLayout,
-    });
-  }}
-/> */
-}
 
 export default SignIn;
