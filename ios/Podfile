@@ -24,6 +24,8 @@ end
 target 'ReactNativeNavigationExample' do
   config = use_native_modules!
 
+  pod 'GoogleMLKit/FaceDetection', '3.2.0'
+
   # Flags change depending on the env values.
   flags = get_default_flags()
 
