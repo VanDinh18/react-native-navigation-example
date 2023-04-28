@@ -2,7 +2,7 @@ import {MMKV} from 'react-native-mmkv';
 import {Storage} from 'redux-persist';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 
-const storage = new MMKV();
+export const storage = new MMKV();
 
 export const mmkvStorage: Storage = {
   setItem: (key, value) => {

@@ -4,10 +4,12 @@ import {generatePersistConfig} from 'store/config';
 
 interface IState {
   data: any[];
+  token?: string;
 }
 
 const initialState: IState = {
   data: [],
+  token: undefined,
 };
 
 const initSlice = createSlice({
@@ -20,12 +22,15 @@ const initSlice = createSlice({
     clearData: state => {
       state.data = [];
     },
+    setToken: (state, action: PayloadAction<any>) => {
+      state.token = action.payload;
+    },
   },
 });
 
 const initActions = initSlice.actions;
 const initReducer = persistReducer<IState>(
-  generatePersistConfig('init', ['data']),
+  generatePersistConfig('init', ['data', 'token']),
   initSlice.reducer,
 );
 

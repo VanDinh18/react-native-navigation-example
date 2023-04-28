@@ -1,3 +1,5 @@
+import {en} from 'languages';
+
 export interface Note {
   id: string;
   title: string;
@@ -34,3 +36,5 @@ export interface IFoodItem {
   id: number;
   image: any;
 }
+
+export type IResource = typeof en;

@@ -1,6 +1,5 @@
 import * as React from 'react';
-import Pressable, {PressableProps} from './base-pressable';
-
+import {Pressable, PressableProps} from 'react-native';
 export interface BaseTouchableProps extends PressableProps {
   activeOpacity?: number;
 }
@@ -10,13 +9,13 @@ const BaseTouchable = ({
   style,
   ...props
 }: BaseTouchableProps) => {
-  const _style: any = ({pressed}: {pressed: boolean}) => [
+  const baseStyle: any = ({pressed}: {pressed: boolean}) => [
     {opacity: pressed ? activeOpacity : 1},
     style && style,
   ];
 
   return (
-    <Pressable style={_style} {...props}>
+    <Pressable style={baseStyle} {...props}>
       {props.children}
     </Pressable>
   );

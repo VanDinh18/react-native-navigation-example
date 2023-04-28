@@ -1,10 +1,9 @@
-import {createText} from '@shopify/restyle';
 import i18next from 'i18next';
 import * as React from 'react';
 import {useTranslation} from 'react-i18next';
-import {Theme} from 'themes';
-
-const Text = createText<Theme>();
+import {Text} from 'react-native';
+import {COLORS} from 'utils/colors';
+import {FONTS} from 'utils/fonts';
 
 interface I18ParamsProps {
   i18Param?: any;
@@ -37,7 +36,19 @@ const BaseText = ({origin, i18Text, i18Param, ...props}: Props) => {
     value = i18Text || '';
   }
 
-  return <Text {...props}>{value}</Text>;
+  return (
+    <Text
+      {...props}
+      style={[
+        {
+          color: COLORS.black,
+          fontFamily: FONTS.regular,
+        },
+        props.style,
+      ]}>
+      {value}
+    </Text>
+  );
 };
 
 export default BaseText;
