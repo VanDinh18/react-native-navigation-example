@@ -9,10 +9,14 @@ import {
   CameraDevice,
   useFrameProcessor,
 } from 'react-native-vision-camera';
+import {storage} from 'store/config';
+import {useAppDispatch} from 'store/hooks';
+import {initActions} from 'store/slices/initSlice';
 
 const SignIn = (props: {componentId: string}) => {
   const devices = useCameraDevices();
   const device = devices.front;
+  const dispatch = useAppDispatch();
 
   const frameProcessor = useFrameProcessor(frame => {
     'worklet';
@@ -35,6 +39,11 @@ const SignIn = (props: {componentId: string}) => {
       <Button
         title="SignIn"
         onPress={() => {
+          storage.set(
+            'user.token',
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c',
+          );
+          // dispatch(initActions.setToken('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'));
           Navigation.setRoot({
             root: DrawerLayout,
           });

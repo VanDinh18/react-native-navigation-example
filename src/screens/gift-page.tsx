@@ -5,22 +5,10 @@ import {Navigation} from 'react-native-navigation';
 import {storage} from 'store/config';
 import {useAppSelector} from 'store/hooks';
 
-const Settings = () => {
+const GiftPage = () => {
   const {data} = useAppSelector(state => state.init);
 
-  return (
-    <View style={styles.container}>
-      <Button
-        title="LOGOUT"
-        onPress={() => {
-          storage.clearAll();
-          Navigation.setRoot({
-            root: AuthStack,
-          });
-        }}
-      />
-    </View>
-  );
+  return <View style={styles.container}></View>;
 };
 
 const styles = StyleSheet.create({
@@ -29,4 +17,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Settings;
+export default GiftPage;

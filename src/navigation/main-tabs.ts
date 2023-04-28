@@ -7,6 +7,9 @@ import {FONTS} from 'utils/fonts';
 export const MainTabs: Layout = {
   bottomTabs: {
     options: {
+      topBar: {
+        visible: false,
+      },
       bottomTabs: {
         borderWidth: 0,
         borderColor: COLORS.transparent,
@@ -47,8 +50,8 @@ export const MainTabs: Layout = {
           children: [
             {
               component: {
-                id: SCREEN_ID.HOME_PAGE_ID,
-                name: SCREEN_NAME.HOME_PAGE,
+                id: SCREEN_ID.CART_PAGE_ID,
+                name: SCREEN_NAME.CART_PAGE,
                 options: {
                   bottomTab: {
                     text: 'CART',
@@ -68,8 +71,8 @@ export const MainTabs: Layout = {
           children: [
             {
               component: {
-                id: SCREEN_ID.HOME_PAGE_ID,
-                name: SCREEN_NAME.HOME_PAGE,
+                id: SCREEN_ID.GIFT_PAGE_ID,
+                name: SCREEN_NAME.GIFT_PAGE,
                 options: {
                   bottomTab: {
                     text: 'GIFT',
