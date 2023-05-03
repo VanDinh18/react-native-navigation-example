@@ -6,19 +6,12 @@ interface Props {
 }
 
 const SideMenu: NavigationFunctionComponent<Props> = ({componentId, name}) => {
-  return (
-    <View style={styles.root}>
-      <Text>Menu 👋</Text>
-    </View>
-  );
+  return <View style={styles.container}></View>;
 };
 
 const styles = StyleSheet.create({
-  root: {
+  container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'whitesmoke',
   },
 });
 

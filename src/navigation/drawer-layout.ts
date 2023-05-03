@@ -1,4 +1,5 @@
 import {Layout} from 'react-native-navigation';
+import {METRICS} from 'utils/constant';
 import {MainTabs} from './main-tabs';
 import {SCREEN_ID, SCREEN_NAME} from './screen';
 
@@ -13,9 +14,10 @@ export const DrawerLayout: Layout = {
     options: {
       sideMenu: {
         left: {
-          width: 250,
+          width: METRICS.WIDTH * 0.8,
         },
       },
+      statusBar: {},
     },
     center: MainTabs,
   },
