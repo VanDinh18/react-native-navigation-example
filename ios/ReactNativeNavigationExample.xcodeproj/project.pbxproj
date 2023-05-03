@@ -22,8 +22,8 @@
 		8D2A6B94D7AD4CD085061F75 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AFA4D628CAC400D83C0E2BA /* Ubuntu-LightItalic.ttf */; };
 		AD7D1BF0B0E94A36B8BF08EB /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D94E1F4D3E344728457A93F /* Ubuntu-BoldItalic.ttf */; };
 		D3C1F0C7316D4986910AA61A /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30DDB05F5D434BCE88E9521E /* Ubuntu-Bold.ttf */; };
-		D79F6B8F29F92CF000557AA0 /* VisionCameraFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F6B8E29F92CF000557AA0 /* VisionCameraFaceDetector.swift */; };
 		D79F6B9129F92FFA00557AA0 /* VisionCameraFaceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F6B9029F92FFA00557AA0 /* VisionCameraFaceDetector.m */; };
+		D7D97FEA2A01F5DA00BEB0A5 /* VisionCameraFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F6B8E29F92CF000557AA0 /* VisionCameraFaceDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,25 +46,25 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeNavigationExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeNavigationExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeNavigationExample/main.m; sourceTree = "<group>"; };
-		175EF6D2C17E401DB03DB292 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-MediumItalic.ttf"; path = "../src/assets/fonts/Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		175EF6D2C17E401DB03DB292 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-MediumItalic.ttf"; path = "../src/assets/fonts/Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		30DDB05F5D434BCE88E9521E /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Bold.ttf"; path = "../src/assets/fonts/Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		30DDB05F5D434BCE88E9521E /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Bold.ttf"; path = "../src/assets/fonts/Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ReactNativeNavigationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeNavigationExample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeNavigationExample/Pods-ReactNativeNavigationExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ReactNativeNavigationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeNavigationExample.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeNavigationExample/Pods-ReactNativeNavigationExample.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5D94E1F4D3E344728457A93F /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-BoldItalic.ttf"; path = "../src/assets/fonts/Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5D94E1F4D3E344728457A93F /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-BoldItalic.ttf"; path = "../src/assets/fonts/Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ReactNativeNavigationExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeNavigationExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76D8D1801953494DB7CDC00B /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Regular.ttf"; path = "../src/assets/fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
-		7AFA4D628CAC400D83C0E2BA /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-LightItalic.ttf"; path = "../src/assets/fonts/Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		76D8D1801953494DB7CDC00B /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Regular.ttf"; path = "../src/assets/fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		7AFA4D628CAC400D83C0E2BA /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-LightItalic.ttf"; path = "../src/assets/fonts/Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeNavigationExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		8E904A1CCDA04E7E8243659E /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Medium.ttf"; path = "../src/assets/fonts/Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
-		A6F5C8FCD8A649F3943E79C4 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Light.ttf"; path = "../src/assets/fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
-		D79F6B8D29F92CEE00557AA0 /* ReactNativeNavigationExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeNavigationExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E904A1CCDA04E7E8243659E /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Medium.ttf"; path = "../src/assets/fonts/Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		A6F5C8FCD8A649F3943E79C4 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Light.ttf"; path = "../src/assets/fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
 		D79F6B8E29F92CF000557AA0 /* VisionCameraFaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionCameraFaceDetector.swift; sourceTree = "<group>"; };
 		D79F6B9029F92FFA00557AA0 /* VisionCameraFaceDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisionCameraFaceDetector.m; sourceTree = "<group>"; };
+		D7A2613C2A02083F0090D641 /* ReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F953879F45EA45E9988CC5D8 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Italic.ttf"; path = "../src/assets/fonts/Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		F953879F45EA45E9988CC5D8 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Italic.ttf"; path = "../src/assets/fonts/Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +109,12 @@
 			children = (
 				D79F6B8C29F92CA000557AA0 /* FaceDetector */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				D79F6B8D29F92CEE00557AA0 /* ReactNativeNavigationExample-Bridging-Header.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				D7A2613C2A02083F0090D641 /* ReactNative-Bridging-Header.h */,
 			);
 			name = ReactNativeNavigationExample;
 			sourceTree = "<group>";
@@ -185,7 +185,6 @@
 				76D8D1801953494DB7CDC00B /* Ubuntu-Regular.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		D79F6B8C29F92CA000557AA0 /* FaceDetector */ = {
@@ -469,10 +468,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D79F6B8F29F92CF000557AA0 /* VisionCameraFaceDetector.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				D79F6B9129F92FFA00557AA0 /* VisionCameraFaceDetector.m in Sources */,
+				D7D97FEA2A01F5DA00BEB0A5 /* VisionCameraFaceDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,7 +604,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeNavigationExample;
-				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeNavigationExample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -676,7 +675,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeNavigationExample;
-				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeNavigationExample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -751,6 +750,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -815,6 +815,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

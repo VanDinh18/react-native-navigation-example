@@ -2,9 +2,10 @@ import {Icons} from 'assets/images';
 import BaseText from 'base/base-text';
 import ButtonSquare from 'components/button-square';
 import ListFeatureRestaurant from 'components/list-feature-restaurant';
+import {SCREEN_ID} from 'navigation/screen';
 import {useTranslation} from 'react-i18next';
 import React, {StyleSheet, Text, View} from 'react-native';
-import {NavigationFunctionComponent} from 'react-native-navigation';
+import {Navigation, NavigationFunctionComponent} from 'react-native-navigation';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useAppDispatch, useAppSelector} from 'store/hooks';
 import {COLORS} from 'utils/colors';
@@ -40,6 +41,16 @@ const HomePage: NavigationFunctionComponent<Props> = ({componentId}) => {
   const insets = useSafeAreaInsets();
   const {t} = useTranslation();
 
+  const onOpenMenu = () => {
+    Navigation.mergeOptions(SCREEN_ID.SIDE_MENU_ID, {
+      sideMenu: {
+        left: {
+          visible: true,
+        },
+      },
+    });
+  };
+
   return (
     <View style={styles.container}>
       <View
@@ -47,10 +58,11 @@ const HomePage: NavigationFunctionComponent<Props> = ({componentId}) => {
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'space-between',
-          marginTop: insets.top,
+          paddingTop: Math.max(insets.top, 10),
+          paddingBottom: 10,
           paddingHorizontal: 16,
         }}>
-        <ButtonSquare icon={Icons.IcGift} />
+        <ButtonSquare icon={Icons.IcMenuUnfold} onPress={onOpenMenu} />
         <View style={{alignItems: 'center'}}>
           <View>
             <BaseText
@@ -79,7 +91,7 @@ const HomePage: NavigationFunctionComponent<Props> = ({componentId}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.background,
+    backgroundColor: COLORS.white,
   },
 });
 
