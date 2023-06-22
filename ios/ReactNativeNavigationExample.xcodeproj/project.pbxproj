@@ -12,8 +12,18 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1FC64C0D589B413A92685821 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6F5C8FCD8A649F3943E79C4 /* Ubuntu-Light.ttf */; };
+		27A58E7111AC46CBBE2190A0 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F953879F45EA45E9988CC5D8 /* Ubuntu-Italic.ttf */; };
+		2A4019341F474827824DD7EB /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76D8D1801953494DB7CDC00B /* Ubuntu-Regular.ttf */; };
+		3BD7F50521E14FB0883014D7 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 175EF6D2C17E401DB03DB292 /* Ubuntu-MediumItalic.ttf */; };
+		72A6CE8EF7864647BACF9841 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E904A1CCDA04E7E8243659E /* Ubuntu-Medium.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8D2A6B94D7AD4CD085061F75 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AFA4D628CAC400D83C0E2BA /* Ubuntu-LightItalic.ttf */; };
+		AD7D1BF0B0E94A36B8BF08EB /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D94E1F4D3E344728457A93F /* Ubuntu-BoldItalic.ttf */; };
+		D3C1F0C7316D4986910AA61A /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30DDB05F5D434BCE88E9521E /* Ubuntu-Bold.ttf */; };
+		D79F6B9129F92FFA00557AA0 /* VisionCameraFaceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F6B9029F92FFA00557AA0 /* VisionCameraFaceDetector.m */; };
+		D7D97FEA2A01F5DA00BEB0A5 /* VisionCameraFaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79F6B8E29F92CF000557AA0 /* VisionCameraFaceDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +46,25 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeNavigationExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeNavigationExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeNavigationExample/main.m; sourceTree = "<group>"; };
+		175EF6D2C17E401DB03DB292 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-MediumItalic.ttf"; path = "../src/assets/fonts/Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30DDB05F5D434BCE88E9521E /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Bold.ttf"; path = "../src/assets/fonts/Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ReactNativeNavigationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeNavigationExample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeNavigationExample/Pods-ReactNativeNavigationExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ReactNativeNavigationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeNavigationExample.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeNavigationExample/Pods-ReactNativeNavigationExample.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D94E1F4D3E344728457A93F /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-BoldItalic.ttf"; path = "../src/assets/fonts/Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ReactNativeNavigationExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeNavigationExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D8D1801953494DB7CDC00B /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Regular.ttf"; path = "../src/assets/fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		7AFA4D628CAC400D83C0E2BA /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-LightItalic.ttf"; path = "../src/assets/fonts/Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeNavigationExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests/Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E904A1CCDA04E7E8243659E /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Medium.ttf"; path = "../src/assets/fonts/Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		A6F5C8FCD8A649F3943E79C4 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Light.ttf"; path = "../src/assets/fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		D79F6B8E29F92CF000557AA0 /* VisionCameraFaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionCameraFaceDetector.swift; sourceTree = "<group>"; };
+		D79F6B9029F92FFA00557AA0 /* VisionCameraFaceDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisionCameraFaceDetector.m; sourceTree = "<group>"; };
+		D7A2613C2A02083F0090D641 /* ReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F953879F45EA45E9988CC5D8 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Italic.ttf"; path = "../src/assets/fonts/Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +107,14 @@
 		13B07FAE1A68108700A75B9A /* ReactNativeNavigationExample */ = {
 			isa = PBXGroup;
 			children = (
+				D79F6B8C29F92CA000557AA0 /* FaceDetector */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				D7A2613C2A02083F0090D641 /* ReactNative-Bridging-Header.h */,
 			);
 			name = ReactNativeNavigationExample;
 			sourceTree = "<group>";
@@ -122,6 +145,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				C48D52584E904EACA2DBA41F /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +170,30 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C48D52584E904EACA2DBA41F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30DDB05F5D434BCE88E9521E /* Ubuntu-Bold.ttf */,
+				5D94E1F4D3E344728457A93F /* Ubuntu-BoldItalic.ttf */,
+				F953879F45EA45E9988CC5D8 /* Ubuntu-Italic.ttf */,
+				A6F5C8FCD8A649F3943E79C4 /* Ubuntu-Light.ttf */,
+				7AFA4D628CAC400D83C0E2BA /* Ubuntu-LightItalic.ttf */,
+				8E904A1CCDA04E7E8243659E /* Ubuntu-Medium.ttf */,
+				175EF6D2C17E401DB03DB292 /* Ubuntu-MediumItalic.ttf */,
+				76D8D1801953494DB7CDC00B /* Ubuntu-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D79F6B8C29F92CA000557AA0 /* FaceDetector */ = {
+			isa = PBXGroup;
+			children = (
+				D79F6B8E29F92CF000557AA0 /* VisionCameraFaceDetector.swift */,
+				D79F6B9029F92FFA00557AA0 /* VisionCameraFaceDetector.m */,
+			);
+			path = FaceDetector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +255,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -244,6 +292,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D3C1F0C7316D4986910AA61A /* Ubuntu-Bold.ttf in Resources */,
+				AD7D1BF0B0E94A36B8BF08EB /* Ubuntu-BoldItalic.ttf in Resources */,
+				27A58E7111AC46CBBE2190A0 /* Ubuntu-Italic.ttf in Resources */,
+				1FC64C0D589B413A92685821 /* Ubuntu-Light.ttf in Resources */,
+				8D2A6B94D7AD4CD085061F75 /* Ubuntu-LightItalic.ttf in Resources */,
+				72A6CE8EF7864647BACF9841 /* Ubuntu-Medium.ttf in Resources */,
+				3BD7F50521E14FB0883014D7 /* Ubuntu-MediumItalic.ttf in Resources */,
+				2A4019341F474827824DD7EB /* Ubuntu-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +470,8 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D79F6B9129F92FFA00557AA0 /* VisionCameraFaceDetector.m in Sources */,
+				D7D97FEA2A01F5DA00BEB0A5 /* VisionCameraFaceDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeNavigationExample-ReactNativeNavigationExampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactNativeNavigationExampleTests/Info.plist;
@@ -486,7 +546,51 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FA82PWW2HD;
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-Fmt\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-PeerTalk\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-RSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/FlipperKit\"",
+					"\"${PODS_ROOT}/Headers/Public/RCT-Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTTypeSafety\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Codegen\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAppDelegate\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-callinvoker\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-hermes\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/React-logger\"",
+					"\"${PODS_ROOT}/Headers/Public/React-perflogger\"",
+					"\"${PODS_ROOT}/Headers/Public/React-runtimeexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"\"${PODS_ROOT}/Headers/Public/YogaKit\"",
+					"\"${PODS_ROOT}/Headers/Public/fmt\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/hermes-engine\"",
+					"\"${PODS_ROOT}/Headers/Public/libevent\"",
+					"\"$(PODS_ROOT)/DoubleConversion\"",
+					"\"$(PODS_ROOT)/boost\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_TARGET_SRCROOT)/include/\"",
+				);
 				INFOPLIST_FILE = ReactNativeNavigationExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,6 +604,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeNavigationExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -513,6 +618,50 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FA82PWW2HD;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-Fmt\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-PeerTalk\"",
+					"\"${PODS_ROOT}/Headers/Public/Flipper-RSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/FlipperKit\"",
+					"\"${PODS_ROOT}/Headers/Public/RCT-Folly\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTTypeSafety\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Codegen\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAppDelegate\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-callinvoker\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-hermes\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/React-logger\"",
+					"\"${PODS_ROOT}/Headers/Public/React-perflogger\"",
+					"\"${PODS_ROOT}/Headers/Public/React-runtimeexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"\"${PODS_ROOT}/Headers/Public/YogaKit\"",
+					"\"${PODS_ROOT}/Headers/Public/fmt\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/hermes-engine\"",
+					"\"${PODS_ROOT}/Headers/Public/libevent\"",
+					"\"$(PODS_ROOT)/DoubleConversion\"",
+					"\"$(PODS_ROOT)/boost\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_TARGET_SRCROOT)/include/\"",
+				);
 				INFOPLIST_FILE = ReactNativeNavigationExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,6 +675,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeNavigationExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -600,6 +750,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -664,6 +815,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
