@@ -1,41 +1,14 @@
-import {DrawerLayout} from 'navigation/drawer-layout';
-import {scanFaces} from 'plugins/face-detector/processor';
+import { DrawerLayout } from 'navigation/drawer-layout';
 import React from 'react';
-import {Button, StyleSheet, View} from 'react-native';
-import {Navigation} from 'react-native-navigation';
-import {
-  Camera,
-  useCameraDevices,
-  CameraDevice,
-  useFrameProcessor,
-} from 'react-native-vision-camera';
-import {storage} from 'store/config';
-import {useAppDispatch} from 'store/hooks';
-import {initActions} from 'store/slices/initSlice';
+import { Button, StyleSheet, View } from 'react-native';
+import { Navigation } from 'react-native-navigation';
+import { storage } from 'store/config';
+import { useAppDispatch } from 'store/hooks';
+import { initActions } from 'store/slices/initSlice';
 
-const SignIn = (props: {componentId: string}) => {
-  const devices = useCameraDevices();
-  const device = devices.front;
-  const dispatch = useAppDispatch();
-
-  const frameProcessor = useFrameProcessor(frame => {
-    'worklet';
-    const scannedFaces = scanFaces(frame);
-    console.log(scannedFaces);
-  }, []);
-
+const SignIn = (props: { componentId: string }) => {
   return (
     <View style={styles.container}>
-      {/* {device && (
-        <Camera
-          frameProcessor={frameProcessor}
-          style={StyleSheet.absoluteFill}
-          device={device}
-          isActive={true}
-          frameProcessorFps={5}
-        />
-      )} */}
-
       <Button
         title="SignIn"
         onPress={() => {
